@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			margin: 0;
+		}
+		/*style untuk header*/
+		.header{
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+		/* style untuk navigation*/
+		.navigation{
+			overflow: hidden;
+			background-color: #03A9F4;
+		}
+		/*style links di navigation*/
+		.navigation a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		/*perubahan warna saat hover*/
+		.navigation a:hover{
+			background-color: #ddd;
+			color: block;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		/*tiga kolom float yang panjang ke bawahnya tidak sama */
+		.aside, .article{
+			float: left;
+			padding: 10px;
+		}
+		/* kolom pertama dan ketiga*/
+		.aside{
+			width: 25%;
+		}
+		/*kolom kedua*/
+		.article{
+			width: 50%;
+		}
+		/*responsive layout-kolom di container menjadi baris*/
+		@media(max-width: 600px){
+			.aside, .article{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+	<div class="navigation">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p> lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+		<div class="article">
+			<h2>Main Content</h2>
+			<p> HTML adalah singkatan dari Hypertext Markup Language. Bahasa HTML digunakan untuk membangun halaman web. Selain itu, HTML adalah bahasa markup yang umum digunakan oleh para developer web. Karena kemudahan dalam menggunakannya, HTML menjadi bahasa pemrograman web yang populer dikalangan para developer.</p>
+			<p> HTML mempunyai fungsi di antaranya dapat menentukan format suatu teks, membuat list, membuat link ke dokumen lain, menyisipkan gambar, serta dapat menampilkan informasi dalam bentuk tabel. Selain itu, HTML juga berfungsi untuk mengatur tampilan dari halaman web dan isinya, menambahkan objek seperti gambar, video, audio, dan lain-lain.</p>
+		</div>
+		<div class="aside">
+			<h2>Side</h2>
+			<p>lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+	</div>
+</body>
+</html>

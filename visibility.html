@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Property Visibility</title>
+	<style type="text/css">
+		.tooltip{
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dotted black;
+		}
+		.tooltiptext{
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			top: 150%;
+			left: 50%;
+			margin-left: -60px;
+		}
+		.tooltip:hover .tooltiptext{
+			visibility: visible;
+		}
+	</style>
+</head>
+<body style="text-align: center;">
+	<h2>Tooltiptext yang muncul di bawah</h2>
+	<div class="tooltip">
+		Arahkan kursor mouse ke sini
+		<span class="tooltiptext">Ini adalah tooltip teks yang muncul di bawah, sebagai keterangan ekstra</span>
+	</div>
+</body>
+</html>
